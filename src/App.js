@@ -3,20 +3,19 @@ import './App.css';
 import Hello from './components/Hello';
 import FuncComponent from './components/FunComponent';
 import MyClass from './components/MyClass';
+import Name from './components/Name';
 
 
 
 function App() {
 
   function clicked() {
-    alert('Class Component Clicked')
+    alert('Inside App.js')
 }
   return (
     <div className="container">
-      <h1>Hello React App</h1>
-      <Hello name="Vitaliy" ></Hello>
-      
-      <MyClass email="vitaliy.kalachev@gmail.com" myclick = {clicked}/>
+      <Name/>
+
     </div>
   );
 }
