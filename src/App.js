@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import Hello from './components/Hello';
 import FuncComponent from './components/FunComponent';
+import MyClass from './components/MyClass';
+
+
 
 function App() {
   return (
@@ -9,6 +12,7 @@ function App() {
       <h1>Hello React App</h1>
       <Hello></Hello>
       <FuncComponent/>
+      <MyClass/>
     </div>
   );
 }
