@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App">
       <h1>Hello React App</h1>
-      <Hello></Hello>
-      <FuncComponent/>
-      <MyClass/>
+      <Hello name="Vitaliy" lastname="Kalachev"></Hello>
+      
+      <MyClass email="vitaliy.kalachev@gmail.com"/>
     </div>
   );
 }

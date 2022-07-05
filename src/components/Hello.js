@@ -2,10 +2,10 @@ import React from 'react';
 
 
 
-function Hello() {
+function Hello(props) {
 
     return (
-        <h1>We are insider Function component</h1>
+        <h1>My name is <br/>{props.name}<br/> and my last name is <br/>{props.lastname} </h1>
     )
 }
 
