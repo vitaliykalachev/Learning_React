@@ -4,8 +4,14 @@ import React from 'react';
 
 function Hello(props) {
 
+    function Clickme() {
+        alert("Button is Clicked");
+    }
     return (
-        <h1>My name is <br/>{props.name}<br/> and my last name is <br/>{props.lastname} </h1>
+        <div>
+            <h1>My name is <br/>{props.name}</h1>
+            <button onClick={Clickme}>Click me</button>
+        </div>
     )
 }
 

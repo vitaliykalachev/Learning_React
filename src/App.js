@@ -7,12 +7,16 @@ import MyClass from './components/MyClass';
 
 
 function App() {
+
+  function clicked() {
+    alert('Class Component Clicked')
+}
   return (
     <div className="App">
       <h1>Hello React App</h1>
-      <Hello name="Vitaliy" lastname="Kalachev"></Hello>
+      <Hello name="Vitaliy" ></Hello>
       
-      <MyClass email="vitaliy.kalachev@gmail.com"/>
+      <MyClass email="vitaliy.kalachev@gmail.com" myclick = {clicked}/>
     </div>
   );
 }
