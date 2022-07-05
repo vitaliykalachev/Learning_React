@@ -8,8 +8,8 @@ class MyClass extends Component {
     render() {
         return(
             <div>
-            <h1> My email is: <br/> {this.props.email}</h1>
-            <button onClick={this.props.myclick}>Click</button>
+            <h1 className="bg-primary text-white text-center"> My email is: {this.props.email}</h1>
+            <button className="btn btn-primary" onClick={this.props.myclick}>Click</button>
             </div>
         )
     }

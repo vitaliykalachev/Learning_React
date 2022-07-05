@@ -12,7 +12,7 @@ function App() {
     alert('Class Component Clicked')
 }
   return (
-    <div className="App">
+    <div className="container">
       <h1>Hello React App</h1>
       <Hello name="Vitaliy" ></Hello>
       
