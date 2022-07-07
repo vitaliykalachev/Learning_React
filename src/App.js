@@ -10,7 +10,8 @@ import Example2 from './components/Example2';
 import Form from './components/Form';
 import MyFragment from './components/MyFragment';
 import ComponentA from './components/ComponentA';
-
+import Counter from './components/Counter';
+import CounterHook from './components/CounterHook';
 
 export const MyContext = React.createContext()
 
@@ -23,11 +24,13 @@ function App() {
   return (
     <div className="container">
       
-      <MyContext.Provider value = "This is a value from context">
+      <Counter />
+      <CounterHook />
+      {/* <MyContext.Provider value = "This is a value from context">
 
       <ComponentA />
      
-      </MyContext.Provider>
+      </MyContext.Provider> */}
       {/* <Name/>
       <Example names = {['Python', 'Java', 'JavaScript', 'C#']}/>
       <Example2 names = {['React', 'React Native', 'Django', 'Flask']}/>
