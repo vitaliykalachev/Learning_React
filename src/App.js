@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Hello from './components/Hello';
@@ -19,7 +20,7 @@ function App() {
       {/* <Name/>
       <Example names = {['Python', 'Java', 'JavaScript', 'C#']}/>
       <Example2 names = {['React', 'React Native', 'Django', 'Flask']}/>
-      <Form/> */}
+      <Form/>  */}
       <MyFragment/>
 
     </div>

@@ -13,12 +13,12 @@ export class Form extends Component {
       }
     }
 
-    componentDidMount() {
-        fetch('https://jsonplaceholder.typicode.com/posts')
-        .then(response => response.json())
-        .then(data => this.setState({posts: data}))
+    // componentDidMount() {
+    //     fetch('https://jsonplaceholder.typicode.com/posts')
+    //     .then(response => response.json())
+    //     .then(data => this.setState({posts: data}))
 
-    }
+    // }
 
     usernameHandler = (event) => {
         this.setState({
