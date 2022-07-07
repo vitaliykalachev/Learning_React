@@ -9,6 +9,11 @@ import Example from './components/Example';
 import Example2 from './components/Example2';
 import Form from './components/Form';
 import MyFragment from './components/MyFragment';
+import ComponentA from './components/ComponentA';
+
+
+export const MyContext = React.createContext()
+
 
 function App() {
 
@@ -17,11 +22,17 @@ function App() {
 }
   return (
     <div className="container">
+      
+      <MyContext.Provider value = "This is a value from context">
+
+      <ComponentA />
+     
+      </MyContext.Provider>
       {/* <Name/>
       <Example names = {['Python', 'Java', 'JavaScript', 'C#']}/>
       <Example2 names = {['React', 'React Native', 'Django', 'Flask']}/>
       <Form/>  */}
-      <MyFragment/>
+      {/* <MyFragment/> */}
 
     </div>
   );
