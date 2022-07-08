@@ -14,6 +14,8 @@ import Counter from './components/Counter';
 import CounterHook from './components/CounterHook';
 import FetchData from './components/FetchData';
 import ComponentC from './components/ComponentC';
+import UseReducer from './components/UseReducer';
+import DataFetching from './components/DataFetching';
 
 export const MyContext = React.createContext()
 
@@ -26,12 +28,17 @@ function App() {
   return (
     <div className="container">
       
-      
-      <MyContext.Provider value = "This data sent is usecontext hook">
+
+
+
+      {/* <UseReducer />
+       */}
+      <DataFetching />
+      {/* <MyContext.Provider value = "This data sent is usecontext hook">
       
       <ComponentC />
 
-      </MyContext.Provider>
+      </MyContext.Provider> */}
 
       {/* <FetchData /> */}
       {/* <Counter /> */}
