@@ -12,9 +12,15 @@ export class Counter extends Component {
       }
     }
 
-    clickMe = () => {
+    clickMeplus = () => {
         this.setState({
             count:this.state.count +1
+        })
+    }
+
+    clickMeMinus = () => {
+        this.setState({
+            count:this.state.count -1
         })
     }
 
@@ -23,9 +29,10 @@ export class Counter extends Component {
     return (
       <div>
         <h2>{this.state.count}</h2>
-
-        <button onClick = {this.clickMe} className="btn btn-success">Click it</button>
-
+        
+        <button onClick = {this.clickMeplus} className="btn btn-success">+</button>
+        <button onClick = {this.clickMeMinus} className="btn btn-success">-</button>
+        
       </div>
     )
   }
